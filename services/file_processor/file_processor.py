@@ -10,7 +10,12 @@ class FileProcessor(ABC):
 
     @abstractmethod
     def process_files(self) -> pd.DataFrame:
-        ''' Abstract Method. To re-write'''
+        '''
+        Description: Process a ".file_format" file and convert it to
+        a "Dataframe" Format
+
+        Return: pd.DataFrame
+        '''
         pass
 
 class CSVProcessor(FileProcessor):
